@@ -1,0 +1,493 @@
+/* Comman : Begin */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.o-f {
+    overflow: hidden;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.ta-center {
+    text-align: center!important;
+}
+.width-half {
+    width: 50%;
+}
+.width-full {
+    width: 100%;
+}
+.widht-third {
+    width: 33.33333%!important;
+}
+.f-l {
+    float: left;
+}
+.mrl--8px {
+    margin: 0px -8px;
+}
+.prl-8px {
+    padding: 0px 8px;
+}
+.p-8px {
+    padding: 8px!important;
+}
+.fs-24px {
+    font-size: 24px!important;
+}
+.fs-15px {
+    font-size: 15px!important;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Comman : End */
+#main {
+
+}
+/* header : Begin */
+#header {
+    width: 100%;
+    height: 46.5px;
+    background: #000;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+    /* nav : Begin */
+.nav {
+    display: inline-block;
+}
+.nav > li {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    margin-left: -4px;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+    height: 46.5px;
+    line-height: 46.5px;
+    padding: 0px 24px;
+}
+
+.nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+.nav-down {
+    font-size: 12px;
+}
+    /* nav : End */
+
+    /* subnav : Begin */
+.nav .subnav {
+    position: absolute;
+}
+.nav .subnav li {
+    list-style-type: none;
+
+}
+.nav .subnav li a {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 15px;
+    min-width: 160px;
+    min-height: 38.5px;
+    display: none;
+}
+.subnav li:hover a {
+    background: #ccc;
+}
+.nav > li:hover .subnav li a {
+    display: block;
+}
+    /* subnav : End */
+
+    /* search : Begin */
+#header .menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    float: right;
+    height: 46.5px;
+    line-height: 46.5px;
+    padding: 0px 24px;
+    font-size: 15px;
+    
+}
+
+#header .menu-icon:hover {
+    background: #ccc;
+    color: #000;
+}
+
+#header .search-icon:hover {
+    color: #fff;
+    background: #f44336;
+    cursor: pointer;
+}
+    /* search : End */
+/* header : End */
+
+
+/* slider : Begin */
+#slider {
+    padding-top: 50%;
+    margin-top: 46.5px;
+    background-image: url(../img/la.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#slider .slider-content {
+    position: absolute;
+    bottom: 0;
+    padding: 32px 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+#slider .slider-header {
+    margin: 10px 0px;
+    font-weight: 200;
+}
+
+#slider .slider-subheader {
+    margin: 15px 0px;
+    font-weight: bolder;
+}
+
+/* slider : End */
+
+/* Content : Begin */
+
+    /* band : Begin */
+#content .content-section {
+    padding: 64px 16px;
+    margin: auto;
+    max-width: 800px;
+}
+#content .section-header {
+    font-size: 30px;
+    margin: 10px 0px;
+    text-align: center;
+    letter-spacing: 4px;
+    
+}
+
+#content .section-subheader {
+    font-size: 15px;
+    margin: 15px 0px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .section-about {
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 1.4;
+}
+
+#content .band-members {
+    padding: 32px 0px;
+    overflow: hidden;
+}
+
+#content .members-name {
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+
+#content .members-picture {
+    width: 154px;
+    margin-bottom: 16px;
+}
+    /* band : End */
+
+
+    /* tour : Begin */
+#tour {
+    background-color: #000;
+}
+#tour .content-section {
+    color: #fff;
+    
+}
+#tour .tour-sell li {
+    font-size: 15px;
+    padding: 11px 16px;
+    list-style-type: none;
+    background-color: #fff;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+#tour .tour-sell .sold-out {
+    margin-left: 16px;
+    padding: 3px 8px;
+    background-color: #f44336;
+    color: #fff;
+}
+#tour .tour-sell {
+    margin-top: 33px;
+}
+#tour .tour-sell .quantity {
+    float: right;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+    color: #fff;
+}
+
+#tour .tour-place {
+    overflow: hidden;
+    margin: 0px -16px;
+    padding: 16px 8px 32px 8px;
+}
+
+#tour .wrap-places {
+    overflow: hidden;
+    padding: 0px 8px;
+    margin-top: 16px;
+}
+#tour .place-img {
+    width: 100%;
+    display: block;
+}
+
+#tour .place-about {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 0px 16px;
+    color: #000;
+}
+
+#tour .place-name {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+#tour .place-date {
+    opacity: 0.6;
+    margin: 15px 0px;
+}
+#tour .place-introduce {
+    margin: 15px 0px;
+}
+
+
+
+#tour .buy-button {
+    margin-bottom: 16px;
+    padding: 11px 16px;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+#tour .buy-button:hover {
+    background: #ccc;
+    color: #000;
+}
+    /* tour : End */
+
+    /* contact : Begin */
+
+#contact .wrap-contact {
+    padding: 32px 0px;
+}
+
+#contact .contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+#contact .contact-info a {
+    color: #2918ee;
+    opacity: 0.8;
+}
+#contact .contact-info a:hover {
+    opacity: 1;
+}
+
+#contact i {
+    padding-right: 12px;
+}
+
+#contact .contact-form {
+    font-size: 15px;
+}
+
+#contact input {
+    border: 1px solid #ccc;
+    padding: 11px 8px;
+}
+#contact .send {
+    float: right;
+    margin: 16px 0px;
+    padding: 11px 16px;
+    border: none;
+    background: #000;
+    color: #fff;
+}
+#contact .send:hover {
+    color: #000;
+    background-color: #ccc;
+}
+#map {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#map img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+    /* contact : End */
+/* Content : End */
+
+
+/* footer : Begin */
+#footer {
+    padding: 64px 16px;
+    opacity: 0.6;
+    text-align: center;
+}
+#footer .icon-logo a{
+    font-size: 24px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #000;
+}
+#footer .last-line a {
+    color: #000;
+}
+#footer .last-line {
+    margin: 15px 0px;
+}
+/* footer : End */
+
+/* modal : Begin */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    margin-top: 100px;
+    animation: modalFadeIn ease 0.55s;
+}
+.modal-container .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    padding: 20px 17px;
+    color: #fff;
+}
+.modal-container .pay-btn:hover,
+.modal-container .close-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.modal-header {
+    height: 130px;
+    font-size: 30px;
+    background-color: #009688;
+    color: #fff ;
+    padding: 32px 16px;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-header > i {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 0px 16px;
+}
+.modal-body i {
+    margin-right: 2px;
+}
+.modal-body .modal-label {
+    font-size: 15px;
+    margin: 15px 0px;
+    width: 100%;
+    display: inline-block;
+}
+.modal-body input {
+    padding: 10px 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+.modal-body .pay-btn {
+    background: #009688;
+    color:#fff;
+    font-size: 15px;
+    margin: 16px 0px;
+    text-align: center;
+    padding: 18px 16px;
+}
+.modal-footer .modal-help {
+    float: right;
+    padding-right: 16px;
+    font-size: 15px;
+    margin: 15px 0px;
+    margin-bottom: 31px;
+}
+.modal.open {
+    display: flex;
+}
+/* modal : End */
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
